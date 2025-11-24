@@ -22,7 +22,7 @@ Notes
 4) Local preview (development)
 - Use Python simple server (works on Windows):
   ```powershell
-  cd "C:\Users\jurit\.vscode\Jurim90\BirthdaySite_Vanila_01"
+  cd "C:\YOURPATH\BirthdaySite_Vanila_01"
   python -m http.server 8000
   ```
 
