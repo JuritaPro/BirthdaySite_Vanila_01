@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumināts, Juris! 🎉</title>
+    
+    <!-- Google Fonts - Elegant, readable fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- MUSIC TOGGLE BUTTON -->
+    <button id="musicToggle" class="music-toggle" aria-label="Toggle background music">
+        <i class="fas fa-music"></i>
+    </button>
+    <audio id="backgroundMusic" loop>
+        <source src="audio/background.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- HEADER / HERO SECTION -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Daudz baltu dieniņu!</h1>
+            <h2 class="hero-name">JURIM</h2>
+            <p class="hero-subtitle">Your Text Here!</p>
+            <div class="hero-date">Celebration Date</div>
+        </div>
+        <div class="hero-overlay"></div>
+    </header>
+
+    <!-- BIOGRAPHY SECTION -->
+    <section class="biography" id="biography">
+        <div class="container">
+            <h2 class="section-title">Enter Title</h2>
+            <div class="bio-content">
+                <div class="bio-text">
+                    <p>
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias atque ut eius ad nisi sed consequatur consectetur dolore nobis numquam aliquam tempore illo, reiciendis eaque modi. Corporis est sit quaerat?  
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium autem aliquam error officia dolorem totam esse eveniet tenetur porro doloremque cum veritatis, maiores repellat, ipsam deleniti, deserunt fuga. Nesciunt, ab!
+                    </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIMELINE SECTION -->
+    <section class="timeline-section" id="timeline">
+        <div class="container">
+            <h2 class="section-title">Life's Milestones</h2>
+            <div class="timeline">
+                
+                <!-- Milestone 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">1935</div>
+                        <h3 class="timeline-title">Beginning</h3>
+                        <p class="timeline-description">
+                            XXX
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Milestone 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">1955</div>
+                        <h3 class="timeline-title">Education</h3>
+                        <p class="timeline-description">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore sit quae laboriosam dolorem blanditiis voluptates facilis explicabo. Eaque nemo facilis eum accusamus quo voluptates, cum ratione optio consequatur dolores esse?
+                        
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Milestone 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">1960</div>
+                        <h3 class="timeline-title">Family</h3>
+                        <p class="timeline-description">
+                            XXX
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Milestone 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">1968</div>
+                        <h3 class="timeline-title">XXX</h3>
+                        <p class="timeline-description">
+                            PhD  ....
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Milestone 5 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">1989-1990</div>
+                        <h3 class="timeline-title">Next Generations</h3>
+                        <p class="timeline-description">
+                            XXX
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Milestone 6 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2025</div>
+                        <h3 class="timeline-title">90.th birthday!</h3>
+                        <p class="timeline-description">
+                            Congratulations!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Add more milestones as needed -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PHOTO GALLERY SECTION -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            
+            <!-- GALLERY CONTROLS -->
+            <div class="gallery-controls">
+                <h2 class="section-title">Foto galerija</h2>
+                <div class="control-buttons">
+                    <button class="btn btn-primary" id="showAll">Visas</button>
+                    <button class="btn btn-secondary" id="showFamily">Ģimenē</button>
+                    <button class="btn btn-secondary" id="showWork">Darbā</button>
+                    <button class="btn btn-accent" id="startSlideshow">
+                        <i class="fas fa-play"></i> Slaidu skatīšanās
+                    </button>
+                </div>
+            </div>
+
+            <!-- GALLERY GRID -->
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Photos will be loaded here by JavaScript -->
+                <!-- Each photo should be named: family-1.jpg, family-2.jpg, work-1.jpg, etc. -->
+            </div>
+
+            <!-- LOAD MORE BUTTON -->
+            <div class="load-more-container">
+                <button class="btn btn-large" id="loadMore">Load More Photos</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FULLSCREEN VIEWER -->
+    <div class="fullscreen-viewer" id="fullscreenViewer">
+        <button class="close-btn" id="closeViewer" aria-label="Close fullscreen viewer">
+            <i class="fas fa-times"></i>
+        </button>
+        <button class="nav-btn prev-btn" id="prevPhoto" aria-label="Previous photo">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="nav-btn next-btn" id="nextPhoto" aria-label="Next photo">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <img src="" alt="Fullscreen photo" id="fullscreenImage">
+        <div class="photo-description" id="photoDescription"></div>
+        <button class="download-btn" id="downloadPhoto" aria-label="Download photo">
+            <i class="fas fa-download"></i> Download
+        </button>
+    </div>
+
+    <!-- GUEST MESSAGE SECTION -->
+    <section class="messages-section" id="messages">
+        <div class="container">
+            <h2 class="section-title">Viesu grāmata</h2>
+            <p class="section-subtitle">Uzrakstiet ziņu Jurim</p>
+
+            <!-- MESSAGE FORM -->
+            <div class="message-form-container">
+                <form id="messageForm" class="message-form">
+                    <input 
+                        type="text" 
+                        id="guestName" 
+                        placeholder="Ievadiet savu vārdu..." 
+                        required 
+                        class="form-input"
+                    >
+                    <textarea 
+                        id="guestMessage" 
+                        placeholder="Dalieties ar saviem novēlējumiem, atmiņām vai domām..." 
+                        required 
+                        rows="4"
+                        class="form-textarea"
+                    ></textarea>
+                    <button type="submit" class="btn btn-primary btn-large">
+                        <i class="fas fa-heart"></i> Nosūtīt
+                    </button>
+                </form>
+            </div>
+
+            <!-- MESSAGE DISPLAY -->
+            <div class="messages-display" id="messagesDisplay">
+                <!-- Messages will be loaded here by JavaScript -->
+            </div>
+
+        </div>
+    </section>
+
+    <!-- QR CODE SECTION -->
+    <section class="qr-section" id="qr">
+        <div class="container">
+            <h2 class="section-title">Let's celebrate! (Your text here)
+            </h2>
+            <p class="section-subtitle">Skenē QR kodu ar savu telefonu
+            <br> Skaties un lejuplādē bildes savā telefonā
+            <br> Uzraksti Jurim sveicienu!
+            </p>
+            <div class="qr-container">
+                <!-- Generate QR code at qrcode-monkey.com with your page URL -->
+                <img src="images/qr-code.png" alt="QR Code to access this page" class="qr-image">
+                <p class="qr-url">Optional Text here
+                <br><span id="pageUrl">your-website-url.com</span> 
+                <br>   
+                <br>
+                <span id="pageUrl">www.XXX.com</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                Veidots ar <i class="fas fa-heart"></i> Jurim dzimšanas dienā.
+            </p>
+            <p class="footer-copyright">&copy; 2025.gada decembrī. Tikai autorizētiem viesiem!</p>
+        </div>
+    </footer>
+
+    <!-- Link to JavaScript file -->
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
